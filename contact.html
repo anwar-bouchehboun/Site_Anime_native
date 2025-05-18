@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - AnimeZone</title>
+    <meta
+      name="description"
+      content="Contactez l'équipe d'AnimeZone pour toutes vos questions"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/no-responsive.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="index.html" class="logo">Anime<span>Zone</span></a>
+        <nav>
+          <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="animes.html">Animes</a></li>
+            <li><a href="actualites.html">Actualités</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="page-banner">
+        <h1 class="page-title">Contactez-Nous</h1>
+      </div>
+
+      <!-- Contact Info et Carte -->
+      <section class="contact-section animate-on-scroll">
+        <div class="contact-container">
+          <div class="contact-info-box">
+            <h2 class="section-title">Nos Coordonnées</h2>
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <div class="icon-box">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h3>Adresse</h3>
+                  <p>123 Avenue Anime<br />75000 Paris, France</p>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="icon-box">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div>
+                  <h3>Téléphone</h3>
+                  <p>+33 1 23 45 67 89</p>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="icon-box">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <h3>Email</h3>
+                  <p>contact@animezone.com</p>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="icon-box">
+                  <i class="far fa-clock"></i>
+                </div>
+                <div>
+                  <h3>Heures d'ouverture</h3>
+                  <p>Lun - Ven: 9h - 18h<br />Sam: 10h - 15h</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <h3>Suivez-nous</h3>
+              <div class="social-icons">
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-discord"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.95410655063!2d2.2770199631645247!3d48.858743318962536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sfr!2sfr!4v1652302872714!5m2!1sfr!2sfr"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Formulaire de contact -->
+      <section class="contact-form-section animate-on-scroll">
+        <h2 class="section-title">Envoyez-nous un message</h2>
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Votre Nom</label>
+              <input type="text" id="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Votre Email</label>
+              <input type="email" id="email" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Sujet</label>
+            <input type="text" id="subject" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="6" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="submit-btn">Envoyer le Message</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq-section animate-on-scroll">
+        <h2 class="section-title">Questions Fréquentes</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>
+                Comment puis-je proposer un anime à présenter sur le site ?
+              </h3>
+              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Vous pouvez nous envoyer vos suggestions d'animes à présenter
+                via notre formulaire de contact. Assurez-vous d'inclure le nom
+                de l'anime, une brève description et pourquoi vous pensez qu'il
+                mérite d'être présenté.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Comment devenir rédacteur pour AnimeZone ?</h3>
+              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Nous sommes toujours à la recherche de passionnés d'anime pour
+                rejoindre notre équipe de rédaction. Envoyez-nous votre CV et
+                quelques exemples de vos écrits sur le sujet des animes à
+                jobs@animezone.com.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>
+                Est-il possible de télécharger des épisodes d'anime depuis votre
+                site ?
+              </h3>
+              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Non, AnimeZone est un site d'information et de critique d'anime,
+                nous ne proposons pas de téléchargement ou de streaming
+                d'épisodes. Nous redirigeons nos utilisateurs vers des
+                plateformes légales pour regarder leurs animes préférés.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>
+                J'ai trouvé une erreur dans un article, comment la signaler ?
+              </h3>
+              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Nous apprécions votre aide pour maintenir la précision de nos
+                contenus. Vous pouvez signaler une erreur en utilisant le bouton
+                "Signaler une erreur" présent sous chaque article, ou en nous
+                contactant directement via le formulaire de cette page.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-wave"></div>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>AnimeZone</h3>
+          <p>
+            Votre portail premium pour tout ce qui concerne les animes, mangas
+            et la culture japonaise. Des actualités fraîches aux critiques
+            approfondies, nous sommes votre source ultime d'informations sur
+            l'univers anime.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Liens rapides</h3>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="animes.html">Animes</a></li>
+            <li><a href="actualites.html">Actualités</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Catégories</h3>
+          <ul>
+            <li><a href="#">Shonen</a></li>
+            <li><a href="#">Shojo</a></li>
+            <li><a href="#">Seinen</a></li>
+            <li><a href="#">Mecha</a></li>
+            <li><a href="#">Fantasy</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Newsletter</h3>
+          <div class="footer-newsletter">
+            <p>
+              Abonnez-vous pour recevoir les dernières actualités et mises à
+              jour sur vos animes favoris !
+            </p>
+            <form class="footer-newsletter-form">
+              <input type="email" placeholder="Votre adresse email" required />
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 AnimeZone. Tous droits réservés.</p>
+        <div class="footer-bottom-info">
+          <div class="footer-bottom-links">
+            <a href="#">Mentions légales</a>
+            <a href="#">Politique de confidentialité</a>
+            <a href="#">Conditions d'utilisation</a>
+            <a href="#">Cookies</a>
+          </div>
+          <div>
+            Conçu avec
+            <i class="fas fa-heart" style="color: var(--secondary-color)"></i>
+            par AnimeZone Studios
+          </div>
+        </div>
+      </div>
+      <a href="#" class="back-to-top" id="backToTop"
+        ><i class="fas fa-chevron-up"></i
+      ></a>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/footer.js"></script>
+  </body>
+</html>

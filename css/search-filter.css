@@ -1,0 +1,121 @@
+/* Styles additionnels pour les filtres et recherche */
+
+/* Style pour la boîte des résultats de filtres */
+.filter-result {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+  padding: 0 15px;
+}
+
+.anime-count {
+  font-size: 14px;
+  color: var(--gray-color);
+  font-style: italic;
+}
+
+/* Styles améliorés pour la pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  gap: 8px;
+}
+
+.pagination a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.pagination a:hover {
+  background-color: var(--primary-color-light);
+  color: white;
+}
+
+.pagination a.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.pagination i {
+  font-size: 14px;
+}
+
+/* Styles pour les tags de genre */
+.genre-tag {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 3px 8px;
+  border-radius: 15px;
+  font-size: 12px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+/* Amélioration des styles des cartes d'anime */
+.anime-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.anime-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.anime-info {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: var(--gray-color);
+}
+
+.anime-rating i {
+  color: gold;
+}
+
+.anime-synopsis {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-details {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-details:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Message pour aucun résultat */
+.no-results {
+  padding: 30px;
+  text-align: center;
+  grid-column: 1 / -1;
+  font-size: 18px;
+  color: var(--gray-color);
+}

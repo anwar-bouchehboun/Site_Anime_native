@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animes - AnimeZone</title>
+    <meta
+      name="description"
+      content="Découvrez notre collection complète d'animes sur AnimeZone"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/search-filter.css" />
+    <link rel="stylesheet" href="css/data-display.css" />
+    <link rel="stylesheet" href="css/no-responsive.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="index.html" class="logo">Anime<span>Zone</span></a>
+        <nav>
+          <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="animes.html" class="active">Animes</a></li>
+            <li><a href="actualites.html">Actualités</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="page-banner">
+        <h1 class="page-title">Explorez nos Animes</h1>
+      </div>
+
+      <!-- Filtres -->
+      <section class="filters-section animate-on-scroll">
+        <div class="filters-container">
+          <div class="filter-group">
+            <label for="genre">Genre</label>
+            <select id="genre">
+              <!-- Options seront ajoutées dynamiquement via JavaScript -->
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="year">Année</label>
+            <select id="year">
+              <!-- Options seront ajoutées dynamiquement via JavaScript -->
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="sort">Trier par</label>
+            <select id="sort">
+              <!-- Options seront ajoutées dynamiquement via JavaScript -->
+            </select>
+          </div>
+
+          <div class="search-box">
+            <input type="text" placeholder="Rechercher un anime..." />
+            <button><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+        <div class="filter-result">
+          <span class="anime-count">12 anime(s) trouvé(s)</span>
+        </div>
+      </section>
+
+      <!-- Animes Grid -->
+      <section class="animes-section animate-on-scroll">
+        <h2 class="section-title">Animes Populaires</h2>
+        <div class="anime-grid">
+          <!-- Les cartes d'anime seront générées dynamiquement par JavaScript -->
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#"><i class="fas fa-chevron-right"></i></a>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="cta-section animate-on-scroll">
+        <h2>Vous ne trouvez pas ce que vous cherchez ?</h2>
+        <p>
+          N'hésitez pas à nous contacter si vous recherchez un anime spécifique
+          ou si vous avez des suggestions.
+        </p>
+        <a href="contact.html" class="cta-btn">Nous Contacter</a>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-wave"></div>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>AnimeZone</h3>
+          <p>
+            Votre portail premium pour tout ce qui concerne les animes, mangas
+            et la culture japonaise. Des actualités fraîches aux critiques
+            approfondies, nous sommes votre source ultime d'informations sur
+            l'univers anime.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Liens rapides</h3>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="animes.html">Animes</a></li>
+            <li><a href="actualites.html">Actualités</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Catégories</h3>
+          <ul>
+            <li><a href="#">Shonen</a></li>
+            <li><a href="#">Shojo</a></li>
+            <li><a href="#">Seinen</a></li>
+            <li><a href="#">Mecha</a></li>
+            <li><a href="#">Fantasy</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Newsletter</h3>
+          <div class="footer-newsletter">
+            <p>
+              Abonnez-vous pour recevoir les dernières actualités et mises à
+              jour sur vos animes favoris !
+            </p>
+            <form class="footer-newsletter-form">
+              <input type="email" placeholder="Votre adresse email" required />
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 AnimeZone. Tous droits réservés.</p>
+        <div class="footer-bottom-info">
+          <div class="footer-bottom-links">
+            <a href="#">Mentions légales</a>
+            <a href="#">Politique de confidentialité</a>
+            <a href="#">Conditions d'utilisation</a>
+            <a href="#">Cookies</a>
+          </div>
+          <div>
+            Conçu avec
+            <i class="fas fa-heart" style="color: var(--secondary-color)"></i>
+            par AnimeZone Studios
+          </div>
+        </div>
+      </div>
+      <a href="#" class="back-to-top" id="backToTop"
+        ><i class="fas fa-chevron-up"></i
+      ></a>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/anime-data.js"></script>
+    <script src="js/search-filter.js"></script>
+    <script src="js/data-display.js"></script>
+  </body>
+</html>

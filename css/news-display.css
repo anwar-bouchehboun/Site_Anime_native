@@ -1,0 +1,258 @@
+/* Fichier: c:\Users\Pc\Desktop\anime\mon-projet-web\css\news-display.css */
+/* Styles pour l'affichage des actualités */
+
+/* Modal pour les détails d'actualités */
+.news-modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.news-modal-content {
+  background: linear-gradient(to bottom right, #1a1a2e, #16213e);
+  color: white;
+  border-radius: 10px;
+  max-width: 800px;
+  width: 90%;
+  max-height: 85vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.news-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.3s;
+  z-index: 1;
+}
+
+.news-modal-close:hover {
+  color: white;
+}
+
+.news-modal-header {
+  position: relative;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+.news-modal-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.news-modal-header-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+}
+
+.news-modal-header-info h2 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.news-modal-meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  flex-wrap: wrap;
+}
+
+.news-modal-meta i {
+  color: var(--secondary-color);
+  margin-right: 5px;
+}
+
+.news-modal-category {
+  margin-bottom: 10px;
+}
+
+.news-modal-category .news-tag {
+  font-size: 12px;
+}
+
+.news-modal-body {
+  padding: 25px;
+  line-height: 1.6;
+}
+
+.news-modal-body p {
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.news-modal-footer {
+  padding: 15px 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.news-modal-share {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.news-modal-share span {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.news-modal-share .social-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.news-modal-share .social-icon:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-3px);
+}
+
+/* Animations pour les cartes d'actualités */
+.news-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.news-card:hover .news-card-img {
+  transform: scale(1.05);
+}
+
+.news-card-img {
+  transition: transform 0.5s ease;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Styles pour les filtres de recherche d'actualités */
+.news-filters {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.news-search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+
+.news-search-form .form-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.news-search-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.news-search-form input,
+.news-search-form select {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.news-search-form input:focus,
+.news-search-form select:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 2px rgba(var(--secondary-color-rgb), 0.2);
+}
+
+.news-search-form .btn-search {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.news-search-form .btn-search:hover {
+  background-color: var(--secondary-dark-color);
+  transform: translateY(-2px);
+}
+
+.news-search-form .btn-search i {
+  font-size: 14px;
+}
+
+/* Responsive pour les filtres */
+@media (max-width: 768px) {
+  .news-search-form {
+    flex-direction: column;
+  }
+
+  .news-search-form .form-group {
+    width: 100%;
+  }
+
+  .news-search-form .btn-search {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Style pour les tags de catégories */
+.news-tag {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: var(--secondary-color);
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

@@ -87,11 +87,9 @@ Les contributions sont les bienvenues ! Pour contribuer :
 4. Poussez vers la branche (`git push origin feature/amelioration`)
 5. Ouvrez une Pull Request
 
-## Auteurs
-- Votre Nom - *Développement initial*
 
-## Licence
-Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+
 
 ## Remerciements
 - Font Awesome pour les icônes
